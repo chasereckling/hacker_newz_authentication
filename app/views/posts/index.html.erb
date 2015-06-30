@@ -1,7 +1,15 @@
 <h1>Hacker News </h1>
 
+<% if @posts.any? %>
+
 <ul>
   <% @posts.each do |post| %>
     <li><a href='<%= post.url %>'><%= post.title %></a></li>
   <% end %>
 </ul>
+
+<% else %>
+  <p>There are no posts yet!</p>
+<% end %>
+
+<p><%= link_to "Add", new_post_path %></p>
