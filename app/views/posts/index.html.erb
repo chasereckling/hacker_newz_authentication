@@ -4,7 +4,9 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <li><a href='<%= post.url %>'><%= post.title %></a></li>
+    <% upvoted_post = Post.find(post.id) %>
+    <li><%= link_to 'Upvote', post_path(upvoted_post, post: { points: upvoted_post.points += 1 }), method: :patch %>
+      <%= post.points %> <a href='<%= post.url %>'><%= post.title %></a></li>
   <% end %>
 </ul>
 
