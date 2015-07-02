@@ -1,17 +1,15 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-    render :index
   end
 
   def show
     @post = Post.find(params[:id])
-    render :show
+    @comment = Comment.new
   end
 
   def new
     @post = Post.new
-    render :new
   end
 
   def create
@@ -26,7 +24,6 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    render :edit
   end
 
   def update
