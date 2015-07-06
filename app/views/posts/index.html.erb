@@ -9,7 +9,7 @@
 
     <%= link_to '^', post_path(upvoted_post, post: { points: upvoted_post.points += 1 }), method: :patch %>
       <a href='<%= post.url %>'><%= post.title %></a> (<%= post.url %>)<br>
-      <%= post.points %> points by <%= post.author %> <%= distance_of_time_in_words(post.created_at, current_time, options = {}) %> ago |
+      <%= post.points %> points by <%= post.user.email %> <%= distance_of_time_in_words(post.created_at, current_time, options = {}) %> ago |
       <%= link_to 'discuss', post_path(post.id) %><br><br>
   <% end %>
 </ul>
@@ -19,3 +19,6 @@
 <% end %>
 
 <p><%= link_to "Add", new_post_path %></p>
+
+
+<p><%= link_to "log in", log_in_path %></p>

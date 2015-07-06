@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all.order(points: :desc)
+    # @current = current_user
   end
 
   def show
@@ -10,11 +11,16 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+
   end
 
   def create
-    @post = Post.new(post_params)
+    @user = current_user
+
+    @post = @user.posts.new(post_params)
+
     if @post.save
+      # @post.created_by = current_user.email
       flash[:notice] = "Add successful!"
       redirect_to posts_path
     else
@@ -38,6 +44,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :url, :points, :author)
+    params.require(:post).permit(:title, :url, :points)
   end
 end

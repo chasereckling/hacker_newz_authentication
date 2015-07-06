@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe User do
+    it 'validates the presence of an email' do
+    user = FactoryGirl.create(:user, :email => "toast", :password => "toastlicker")
+    expect(user.email).to eq "toast"
+  end
 end

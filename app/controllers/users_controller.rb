@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
+    # @user = current_user.email
     if @user.save
       flash[:notice] = "Welcome to the site!"
       redirect_to "/"
