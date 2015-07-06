@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "/log-in" => "sessions#new"
+  post "/log-in" => "sessions#create"
+  get "/log-out" => "sessions#destroy", as: :log_out
+
+  get '/' => 'posts#index'
+
+  resources :users
   resources :posts do
     resources :comments
   end
