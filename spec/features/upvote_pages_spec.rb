@@ -7,7 +7,7 @@ describe "upvoting process" do
     fill_in 'Password', :with => 'pickleeater'
     fill_in 'Password confirmation', :with => 'pickleeater'
     click_on 'Sign Up'
-    click_on 'log in'
+    click_on 'Log In'
     fill_in 'Email', :with => 'pickle'
     fill_in 'Password', :with => 'pickleeater'
     click_on 'Log in'
