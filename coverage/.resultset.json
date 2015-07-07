@@ -1,35 +1,31 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/HN-clone/spec/features/add_post_pages_spec.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/features/add_post_pages_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
         null,
         null,
         1,
         1,
-        0,
+        1,
         0,
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/spec/rails_helper.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -85,14 +81,14 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/environment.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/HN-clone/config/application.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/application.rb": [
         1,
         null,
         1,
@@ -129,12 +125,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/boot.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/Guest/Desktop/HN-clone/config/environments/test.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/environments/test.rb": [
         1,
         null,
         null,
@@ -178,7 +174,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/assets.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -191,7 +187,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/backtrace_silencers.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -200,18 +196,18 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/cookies_serializer.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/inflections.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -229,18 +225,18 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/mime_types.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/session_store.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/HN-clone/config/initializers/wrap_parameters.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -256,14 +252,14 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/spec/factories.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/factories.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/config/routes.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/config/routes.rb": [
         1,
         1,
         1,
@@ -281,54 +277,70 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/app/helpers/application_helper.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/spec/features/log_in_pages_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/HN-clone/spec/features/upvote_pages_spec.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/helpers/session_helper.rb": [
         1,
         null,
         1,
+        0,
+        null,
+        null,
         1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/spec/models/post_spec.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/features/log_in_n_out_pages_spec.rb": [
+
+      ],
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/features/log_in_pages_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/features/upvote_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/models/post_spec.rb": [
         1,
         null,
         1,
@@ -338,7 +350,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/app/models/post.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/models/post.rb": [
         1,
         1,
         1,
@@ -347,7 +359,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -357,82 +369,82 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/app/models/user.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/models/user.rb": [
         1,
         1,
         1,
         1,
         1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/HN-clone/app/controllers/users_controller.rb": [
-        1,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/HN-clone/app/controllers/application_controller.rb": [
-        1,
-        null,
         null,
         1,
         null,
         1,
         3,
+        3,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/controllers/users_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        8,
         null,
         1,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/app/controllers/posts_controller.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/controllers/posts_controller.rb": [
         1,
         1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
+        2,
         null,
         null,
         null,
         1,
         0,
-        null,
         0,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
         null,
         0,
         null,
@@ -463,7 +475,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/HN-clone/app/models/comment.rb": [
+      "/Users/Guest/Desktop/hacker_newz_authentication/app/models/comment.rb": [
         1,
         1,
         1,
@@ -471,6 +483,6 @@
         null
       ]
     },
-    "timestamp": 1436226136
+    "timestamp": 1436289039
   }
 }
