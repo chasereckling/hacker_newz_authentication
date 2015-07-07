@@ -1,16 +1,25 @@
+<% if user_admin %>
+  <% content_for(:body) do %>
+  <li>EDIT</li>
+  <% end %>
+<% end %>
+
+
 <h1>Slacker Newz</h1>
 
 
 <%= link_to 'Sort by points', posts_path(@post, :sort_by => "points"), method: :get %> |
-<%= link_to 'Sort by date', posts_path(@post, :sort_by => "date"), method: :get %> |
+<%= link_to 'Sort by date', posts_path(@post, :sort_by => "date"), method: :get %>
 
 
 <ul>
   <% @posts.each do |post| %>
-
-    <%= link_to '^', post_path(post.id, post: { points: post.points += 1 }, :sort_by => "points"), method: :patch %>
+   <div class="post-button">
+      <span><%= link_to post_path(post.id, post: { points: post.points += 1 }), method: :patch, class: "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-arrow-up"></i><% end %></span>
+      <span><%= link_to post_path(post.id, post: { points: post.points -= 2 }), method: :patch, class: "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-arrow-down"></i><% end %></span>
+    </div>
       <a href='<%= post.url %>'><%= post.title %></a> (<%= post.url %>)<br>
-      <%= post.points %> points by <%= post.user.email %> <%= distance_of_time_in_words(post.created_at, Time.now, options = {}) %> ago |
+      <%= post.points %> points by <%= post.user.email %> <%= distance_of_time_in_words(post.created_at, Time.now) %> ago |
       <%= link_to post.comments.count('text', :distinct => true).to_s + " Comments", post_path(post.id)%><br><br>
   <% end %>
 </ul>
