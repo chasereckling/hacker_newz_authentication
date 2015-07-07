@@ -3,6 +3,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     # @user = current_user.email
     if @user.save
+      UserMailer.signup_confirmation(@user).deliver
       flash[:notice] = "Welcome to the site!"
       redirect_to "/"
     else
