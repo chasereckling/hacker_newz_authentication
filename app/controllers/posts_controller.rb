@@ -32,7 +32,6 @@ class PostsController < ApplicationController
     @post = @user.posts.new(post_params)
 
     if @post.save
-      # @post.created_by = current_user.email
       flash[:notice] = "Add successful!"
       redirect_to posts_path
     else
@@ -49,7 +48,6 @@ class PostsController < ApplicationController
     @posts = Post.all.sort_by{|object| [object.points]}.reverse
 
     if @post.update(post_params)
-      # @posts = Post.all.sort_by{|object| [object.points]}.reverse
       redirect_to posts_path
     else
       render :edit
