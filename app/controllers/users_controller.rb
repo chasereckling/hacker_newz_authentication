@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
-    # @user = current_user.email
     if @user.save
       UserMailer.signup_confirmation(@user).deliver
       flash[:notice] = "Welcome to the site!"
@@ -13,6 +12,6 @@ class UsersController < ApplicationController
   end
   private
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end
