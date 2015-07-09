@@ -47,6 +47,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @posts = Post.all.sort_by{|object| [object.points]}.reverse
 
+
     if @post.update(post_params)
       redirect_to posts_path
     else
@@ -59,6 +60,12 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to posts_path
   end
+
+  def upvote
+  @post = Post.find(params[:post_id])
+  @post.points.create
+  redirect_to(posts_path)
+end
 
   private
   def post_params

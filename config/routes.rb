@@ -9,8 +9,8 @@ Rails.application.routes.draw do
     resources :posts
   end
 
-    resources :posts do
+  resources :posts do
+        post 'upvote'
     resources :comments
   end
-
 end
